@@ -211,138 +211,172 @@
     </section>
 
     <!-- Social Proof -->
-    <section class="bg-rush-dark py-24 border-y border-white/5 overflow-hidden">
+    <!-- Social Proof -->
+    <!-- Modification 1 : bg-[#FEFEFC] au lieu de bg-rush-dark. On ajoute border-gray-200 pour garder une ligne de séparation propre. -->
+    <section class="bg-[#FEFEFC] py-24 border-y border-gray-200 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-            <p class="text-center text-xs font-bold text-white/50 uppercase tracking-[0.2em] font-display">Ils font
+            <!-- Changement de la couleur du texte du titre pour qu'il soit visible sur fond clair -->
+            <p class="text-center text-xs font-bold text-gray-500 uppercase tracking-[0.2em] font-display">Ils font
                 confiance à Rush</p>
         </div>
 
         <div class="relative w-full max-w-7xl mx-auto">
+            <!-- Modification 2 : Les dégradés utilisent maintenant la couleur from-[#FEFEFC] -->
             <div
-                class="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-rush-dark to-transparent z-10 pointer-events-none">
+                class="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-[#FEFEFC] to-transparent z-10 pointer-events-none">
             </div>
             <div
-                class="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-rush-dark to-transparent z-10 pointer-events-none">
+                class="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-[#FEFEFC] to-transparent z-10 pointer-events-none">
             </div>
 
             <div class="relative w-full max-w-7xl mx-auto overflow-hidden">
                 <div class="animate-scroll !w-max">
 
                     <div class="flex items-center w-max gap-14 pr-6">
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <!-- Modification 3 : Remplacement de "brightness-0 invert" par "brightness-0 opacity-70" -->
+                        <!-- brightness-0 rend le logo 100% noir. opacity-70 l'adoucit un peu pour qu'il ne soit pas trop agressif. -->
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/Green 2 green.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Green 2 Green">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Green 2 Green">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/chez epicure.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Chez Epicure">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Chez Epicure">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/GOMU.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="GOMU">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="GOMU">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/holy cow.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Holy Cow">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Holy Cow">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/jin joo.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Jin Joo">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Jin Joo">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/paradis latin.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Paradis Latin">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Paradis Latin">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/pierre sang.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Pierre Sang">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Pierre Sang">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/tour d'argent.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Tour d'Argent">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Tour d'Argent">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/vulcania.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Vulcania">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Vulcania">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/Green 2 green.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Green 2 Green">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Green 2 Green">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/chez epicure.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Chez Epicure">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Chez Epicure">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/GOMU.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="GOMU">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="GOMU">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/holy cow.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Holy Cow">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Holy Cow">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/jin joo.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Jin Joo">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Jin Joo">
                         </div>
                     </div>
 
                     <div class="flex items-center w-max gap-14 pr-6">
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/Green 2 green.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Green 2 Green">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Green 2 Green">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/chez epicure.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Chez Epicure">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Chez Epicure">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/GOMU.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="GOMU">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="GOMU">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/holy cow.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Holy Cow">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Holy Cow">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/jin joo.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Jin Joo">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Jin Joo">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/paradis latin.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Paradis Latin">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Paradis Latin">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/pierre sang.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Pierre Sang">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Pierre Sang">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/tour d'argent.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Tour d'Argent">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Tour d'Argent">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/vulcania.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Vulcania">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Vulcania">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/Green 2 green.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Green 2 Green">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Green 2 Green">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/chez epicure.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Chez Epicure">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Chez Epicure">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/GOMU.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="GOMU">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="GOMU">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/holy cow.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Holy Cow">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Holy Cow">
                         </div>
-                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-colors hover:bg-white/10 p-2">
+                        <div class="h-20 w-24 rounded-2xl flex-shrink-0 transition-all hover:scale-110 p-2">
                             <img src="./02_UI/assets/clients/jin joo.png"
-                                class="w-full h-full object-contain brightness-0 invert" alt="Jin Joo">
+                                class="w-full h-full object-contain brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                                alt="Jin Joo">
                         </div>
                     </div>
 
@@ -352,121 +386,103 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-24 lg:py-40 bg-[#f4f4f5] relative overflow-hidden">
+    <section class="py-24 lg:py-40 bg-rush-dark relative overflow-hidden noise-bg">
         <!-- Abstract shapes -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div
+                class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent">
+            </div>
+        </div>
+
+        <!-- Pattern Background -->
         <div
-            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/50 to-transparent pointer-events-none">
+            class="absolute top-1/2 left-1 -translate-x-[-200px] -translate-y-[270px] w-[100%] md:w-[110%] lg:w-[110%] pointer-events-none opacity-80 z-0">
+            <img src="./02_UI/assets/PATTERNS.svg" alt="Background Pattern"
+                class="w-full h-auto object-cover scale-125">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="mb-20 max-w-3xl">
-                <p
-                    class="text-rush-green font-extrabold text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                    </svg>
-                    Ce qu'on fait
-                </p>
+            <div class="mb-20 max-w-3xl mx-auto text-center">
                 <h2
-                    class="font-display text-4xl lg:text-6xl font-extrabold text-rush-dark mb-8 leading-none tracking-tight whitespace-nowrap">
+                    class="font-display text-4xl lg:text-6xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
                     <span class="gradient-text-rush">Quatre</span> outils. Un seul objectif.
                 </h2>
-                <p class="text-xl text-gray-600 font-medium">L'essentiel pour digitaliser votre prise de commande,
+                <p class="text-xl text-gray-300 font-medium">L'essentiel pour digitaliser votre prise de commande,
                     encaisser mieux et fidéliser vos clients. Pas plus. Pas moins.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-                <!-- Feature 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Borne -->
                 <div
-                    class="group bg-white rounded-[2rem] p-10 hover:shadow-2xl transition-all border border-gray-100 hover:border-rush-green/30 relative overflow-hidden">
+                    class="bg-white rounded-3xl p-6 flex flex-col h-full shadow-2xl hover:-translate-y-2 transition-transform duration-300">
                     <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-rush-green/5 rounded-bl-[100px] -z-10 group-hover:bg-rush-green/10 transition-colors">
+                        class="bg-[#f0f0f0] rounded-2xl mb-6 h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="./02_UI/assets/images/wqsqwqsqwwqwq.jpg" class="w-full h-full object-cover"
+                            alt="Borne de commande">
                     </div>
-                    <div
-                        class="font-display text-5xl font-black mb-6 tracking-tighter text-rush-dark/20 group-hover:text-rush-green transition-colors">
-                        01.</div>
-                    <h3 class="font-display text-3xl font-extrabold text-rush-dark mb-4">Borne de commande</h3>
-                    <p class="text-gray-600 mb-8 text-lg">Réduisez la file d'attente. Vos clients commandent seuls, plus
-                        vite, et dépensent plus grâce à l'upsell automatique.</p>
-                    <a href="#"
-                        class="text-base font-extrabold text-rush-dark inline-flex items-center uppercase tracking-wider group-hover:text-rush-green transition-colors mt-auto">En
-                        savoir plus <span class="ml-2 transition-transform group-hover:translate-x-2">&rarr;</span></a>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="font-display text-2xl font-bold text-rush-dark mb-3">Borne de commande</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">Réduisez la file d'attente. Vos
+                            clients commandent seuls, plus vite, et dépensent plus grâce à l'upsell automatique.</p>
+                        <a href="#"
+                            class="w-full block text-center py-4 bg-black text-white rounded-xl font-bold hover:bg-rush-green transition-colors mt-auto uppercase tracking-wider text-sm">En
+                            savoir plus</a>
+                    </div>
                 </div>
 
-                <!-- Placeholder for future warm image 1 -->
-                <!-- L'utilisateur insérera ici la photo authentique avec filtre chaud -->
+                <!-- Card 2: Caisse -->
                 <div
-                    class="hidden md:block rounded-[2rem] overflow-hidden relative shadow-lg group min-h-[250px] lg:min-h-[250px]">
+                    class="bg-white rounded-3xl p-6 flex flex-col h-full shadow-2xl hover:-translate-y-2 transition-transform duration-300">
                     <div
-                        class="absolute inset-0 bg-[#FF6E04]/10 mix-blend-color-burn z-10 pointer-events-none transition-opacity group-hover:opacity-60">
+                        class="bg-[#f0f0f0] rounded-2xl mb-6 h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="./02_UI/assets/images/caisse.png"
+                            class="w-full h-full object-contain mix-blend-multiply drop-shadow-xl" alt="Caisse">
                     </div>
-                    <img src="./02_UI/assets/images/client _happy.png" alt="Ambiance rush fast-food"
-                        class="w-full h-full object-cover">
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="font-display text-2xl font-bold text-rush-dark mb-3">Caisse</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">Encaissement rapide,
+                            multi-moyens de paiement, interface tactile intuitive. Pensée pour tenir la cadence du
+                            service.</p>
+                        <a href="#"
+                            class="w-full block text-center py-4 bg-black text-white rounded-xl font-bold hover:bg-rush-green transition-colors mt-auto uppercase tracking-wider text-sm">En
+                            savoir plus</a>
+                    </div>
                 </div>
 
-                <!-- Placeholder for future warm image 2 -->
-                <!-- L'utilisateur insérera ici la photo authentique avec filtre chaud -->
-                <!-- Placeholder for future warm image 2 -->
+                <!-- Card 3: Web App -->
                 <div
-                    class="hidden md:block bg-[#A2A3A6] rounded-[2rem] overflow-hidden relative shadow-lg group min-h-[400px] lg:min-h-[400px]">
-
-                    <!-- Filtre chaud conservé -->
+                    class="bg-white rounded-3xl p-6 flex flex-col h-full shadow-2xl hover:-translate-y-2 transition-transform duration-300">
                     <div
-                        class="absolute inset-0 bg-[#FF6E04]/10 mix-blend-color-burn z-10 pointer-events-none transition-opacity group-hover:opacity-60">
+                        class="bg-[#f0f0f0] rounded-2xl mb-6 h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="./02_UI/assets/images/client _happy.png" class="w-full h-full object-cover"
+                            alt="Web App">
                     </div>
-
-                    <!-- Image PNG avec transparence -->
-                    <img src="./02_UI/assets/images/caisse.png" alt="Ambiance chaleureuse"
-                        class="w-full h-full object-cover">
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="font-display text-2xl font-bold text-rush-dark mb-3">Web App de commande</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">Click & collect, QR code table
+                            ou commande à distance. Accessible depuis n'importe quel smartphone.</p>
+                        <a href="#"
+                            class="w-full block text-center py-4 bg-black text-white rounded-xl font-bold hover:bg-rush-green transition-colors mt-auto uppercase tracking-wider text-sm">En
+                            savoir plus</a>
+                    </div>
                 </div>
 
-                <!-- Feature 2 -->
+                <!-- Card 4: Fidélité -->
                 <div
-                    class="group bg-white rounded-[2rem] p-10 hover:shadow-2xl transition-all border border-gray-100 hover:border-rush-green/30 relative overflow-hidden">
+                    class="bg-white rounded-3xl p-6 flex flex-col h-full shadow-2xl hover:-translate-y-2 transition-transform duration-300">
                     <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-rush-green/5 rounded-bl-[100px] -z-10 group-hover:bg-rush-green/10 transition-colors">
+                        class="bg-[#f0f0f0] rounded-2xl mb-6 h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="./02_UI/assets/images/rereerererre.jpg" class="w-full h-full object-cover"
+                            alt="Fidélité">
                     </div>
-                    <div
-                        class="font-display text-5xl font-black mb-6 tracking-tighter text-rush-dark/20 group-hover:text-rush-green transition-colors">
-                        02.</div>
-                    <h3 class="font-display text-3xl font-extrabold text-rush-dark mb-4">Caisse</h3>
-                    <p class="text-gray-600 mb-8 text-lg">Encaissement rapide, multi-moyens de paiement, interface
-                        tactile intuitive. Pensée pour tenir la cadence du service.</p>
-                    <a href="#"
-                        class="text-base font-extrabold text-rush-dark inline-flex items-center uppercase tracking-wider group-hover:text-rush-green transition-colors mt-auto">En
-                        savoir plus <span class="ml-2 transition-transform group-hover:translate-x-2">&rarr;</span></a>
-                </div>
-
-                <!-- Feature 3 -->
-                <div
-                    class="group bg-white rounded-[2rem] p-10 hover:shadow-2xl transition-all border border-gray-100 hover:border-rush-green/30 relative overflow-hidden">
-                    <div
-                        class="font-display text-5xl font-black mb-6 tracking-tighter text-rush-dark/20 group-hover:text-rush-green transition-colors">
-                        03.</div>
-                    <h3 class="font-display text-3xl font-extrabold text-rush-dark mb-4">Web App de commande</h3>
-                    <p class="text-gray-600 mb-8 text-lg">Click & collect, QR code table ou commande à distance.
-                        Accessible depuis n'importe quel smartphone.</p>
-                    <a href="#"
-                        class="text-base font-extrabold text-rush-dark inline-flex items-center uppercase tracking-wider group-hover:text-rush-green transition-colors mt-auto">En
-                        savoir plus <span class="ml-2 transition-transform group-hover:translate-x-2">&rarr;</span></a>
-                </div>
-
-                <!-- Feature 4 -->
-                <div
-                    class="group bg-white rounded-[2rem] p-10 shadow-xl hover:shadow-2xl transition-all border border-gray-100 hover:border-rush-green/30 relative overflow-hidden bg-rush-dark text-white">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-br from-rush-green/10 to-transparent pointer-events-none">
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="font-display text-2xl font-bold text-rush-dark mb-3">Fidélité</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">Programme de points,
+                            récompenses, coupons. Faites revenir vos clients sans effort. Vos données, toujours.</p>
+                        <a href="#"
+                            class="w-full block text-center py-4 bg-black text-white rounded-xl font-bold hover:bg-rush-green transition-colors mt-auto uppercase tracking-wider text-sm">En
+                            savoir plus</a>
                     </div>
-                    <div
-                        class="font-display text-5xl font-black mb-6 tracking-tighter gradient-text-rush drop-shadow-[0_0_15px_rgba(0,200,83,0.3)] relative z-10 group-hover:scale-105 transition-transform origin-left">
-                        04.</div>
-                    <h3 class="font-display text-3xl font-extrabold text-rush-green mb-4 relative z-10">Fidélité</h3>
-                    <p class="text-gray-400 mb-8 text-lg relative z-10">Programme de points, récompenses, coupons.
-                        Faites revenir vos clients sans effort. Vos données, toujours.</p>
-                    <a href="#"
-                        class="text-base font-extrabold text-rush-neon inline-flex items-center uppercase tracking-wider hover:text-white transition-colors mt-auto relative z-10">En
-                        savoir plus <span class="ml-2 transition-transform group-hover:translate-x-2">&rarr;</span></a>
                 </div>
             </div>
         </div>
